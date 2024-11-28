@@ -31,4 +31,4 @@ jobs:
           MISE_HTTP_TIMEOUT: 300
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       - name: Release Homebrew cask
-        run: mise run cask --version ${{ steps.semvers.outputs.version }} --github-token ${{ secrets.TUIST_HOMEBREW_APP_CASK_RELEASE_TOKEN }} --sha256 ${{ steps.sha256.outputs.sha256 }}
+        run: mise run cask --version 0.8.1 --github-token ${{ secrets.TUIST_HOMEBREW_APP_CASK_RELEASE_TOKEN }} --sha256 4e121a0fa1803a9837cbfce740bedbd03531815df69ebd69dc92d555ab6b22f2
