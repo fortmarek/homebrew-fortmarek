@@ -9,6 +9,7 @@ cask "app@0.8.1" do
 
     auto_updates true
     conflicts_with formula: "tuist"
+    depends_on macos: :monterey
 
     app "Tuist.app"
 end
